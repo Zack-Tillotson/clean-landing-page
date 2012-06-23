@@ -26,8 +26,10 @@ function addfeed($e, $url) {
 	// Show feed div
 	$("#" + $e).hover(function() {
 		$("#" + $d).slideToggle("fast");
+		$("#links").css("border-top", "solid 2px black");
 	}, function() {
 		$("#" + $d).slideToggle("fast");
+		$("#links").css("border-top", "solid 5px black");
 	});
 	
 	// Add content to feed div
