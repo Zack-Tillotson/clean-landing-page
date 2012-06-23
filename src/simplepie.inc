@@ -477,7 +477,7 @@ class SimplePie
 	 * @see SimplePie::enable_cache()
 	 * @access private
 	 */
-	var $cache = true;
+	var $cache = false;
 
 	/**
 	 * @var int Cache duration (in seconds)
