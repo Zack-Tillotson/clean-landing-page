@@ -11,6 +11,7 @@ body {
 	background: url("Back1.jpg") no-repeat grey;
 	margin: 0px;
 	font-family: 'Clarendon-Light', serif;
+	overflow: hidden;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h1 {
 	font-weight: normal;
 }
 
-div {
+div#links {
 	background-color: white;
 	padding: 10px;
 	border-top: solid 5px;
@@ -34,7 +35,7 @@ div {
 	right: 0px;
 }
 
-a {
+div#links a {
 	text-decoration: none;
 	font-size: 20px;
 	color: #C33;
@@ -42,10 +43,45 @@ a {
 	margin-left: 50px;
 }
 
-a:hover {
+div#links a:hover {
 	text-decoration: underline;
 }
 
-a:visited {
+div#links a:visited {
 	color: #444;
+}
+
+div.feed {
+	height: 30%;
+	background: white;
+	border-top: solid black 5px;
+	position: absolute;
+	bottom: 25px;
+	left: 0px;
+	right: 0px;
+}
+
+div.feed div.title {
+	background: #eee;
+	font-size: 25px;
+	padding: 10px 10% 10px 10%;
+}
+
+div.feed div.content {
+	padding-left: 15%;
+	font-size: 20px;
+}
+
+div.feed div.content div.item-title {
+	float: left;
+	width: 800px;
+}
+
+div.feed div.content div.item-title a {
+	text-decoration: none;
+	color: black;
+}
+
+div.feed div.content div.item-date {
+	padding-left: 20px;
 }

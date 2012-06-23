@@ -31,14 +31,16 @@ if (!empty($_GET['feed']))
 $feed->handle_content_type();
 
 ?>
-<?php echo (empty($_GET['feed'])) ? 'Atom Feed' : $feed->get_title(); ?><span>Displaying <?php echo $feed->get_item_quantity(); ?> most recent entries.</span>
-<div class="feed-results">
+<div class="title">Recent Activity</div>
+<div class="content">
 	<?php if ($feed->data): ?>
 		<?php $items = $feed->get_items(); ?>
 		<?php foreach($items as $item): ?>
-			<div class="a-feed-item">
-				<h4><a href="<?php echo $item->get_permalink(); ?>"><?php echo $item->get_title(); ?></a> <?php echo $item->get_date('j M Y'); ?></h4>
-				<?php echo $item->get_content(); ?>
+			<div class="item-title">
+				<a href="<?php echo $item->get_permalink(); ?>"><?php echo $item->get_title(); ?></a>
+			</div>
+			<div class="item-date">
+				<?php echo $item->get_date('j M Y'); ?>
 			</div>
 		<?php endforeach; ?>
 		</div>
