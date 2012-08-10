@@ -9,6 +9,7 @@
 
 body {
 	background: url("Back1.jpg") no-repeat grey;
+	background-size: cover;
 	margin: 0px;
 	font-family: 'Clarendon-Light', serif;
 	overflow: hidden;
@@ -62,20 +63,27 @@ div.feed {
 	font-family: Sans-Serif;
 }
 
+div.feed img.loading { 
+	margin: auto; 
+	line-height: 100px; 
+}
+
 div.feed div.title {
 	background: #eee;
 	font-size: 25px;
-	padding: 10px 10% 10px 10%;
+	padding: 10px 5% 10px 5%;
 }
 
 div.feed div.content {
-	padding-left: 15%;
-	font-size: 20px;
+	padding-left: 10%;
+	padding-right: 10%;
+	font-size: 17px;
 }
 
 div.feed div.content div.item-title {
+	clear: left;
 	float: left;
-	width: 800px;
+	width: 70%;	
 }
 
 div.feed div.content div.item-title a {
@@ -84,5 +92,8 @@ div.feed div.content div.item-title a {
 }
 
 div.feed div.content div.item-date {
-	padding-left: 20px;
+	float: left;
+	width: 20%;
+	margin-left: 10%;
+	text-align: right;
 }
