@@ -8,7 +8,7 @@
 }
 
 body {
-	background: url("Back1.jpg") no-repeat grey;
+	background: url("/resources/Back1.jpg") no-repeat grey;
 	background-size: cover;
 	margin: 0px;
 	font-family: 'Clarendon-Light', serif;
@@ -96,4 +96,9 @@ div.feed div.content div.item-date {
 	width: 20%;
 	margin-left: 10%;
 	text-align: right;
+}
+
+div.feed img.loading {
+	margin: 50px auto;;
+	display: block;
 }

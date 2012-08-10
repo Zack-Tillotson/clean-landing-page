@@ -15,7 +15,7 @@ function microtime_float()
 
 $start = microtime_float();
 
-include('src/simplepie.inc');
+include('resources/simplepie.inc');
 
 // Parse it
 $feed = new SimplePie();

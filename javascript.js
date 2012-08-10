@@ -8,7 +8,7 @@ function addfeed($e, $url) {
 
 	var $d = $e + "-feed";
 	
-	$("h1").after('<div class="feed" id="' + $d + '"><img class="loading" src="loading.gif" /></div>');
+	$("h1").after('<div class="feed" id="' + $d + '"><img class="loading" src="/resources/loading.gif" /></div>');
 	$("#" + $d).hide();
 
 	// Show feed div
