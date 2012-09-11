@@ -1,6 +1,6 @@
 $(document).ready(function() {
 	addfeed('github', 'https://github.com/Zack-Tillotson.atom');
-	addfeed('blog', 'http://www.excitedmuch.com/blog/feed/');
+	addfeed('blog', 'http://zacherytillotson.com/blog/feed/');
 	addfeed('china', 'http://www.laowaigonewild.com/feed/');
 });
 

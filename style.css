@@ -1,10 +1,10 @@
 /* Clarendon-Light webfont (new-bulletproof) */ 
 @font-face {
     font-family: 'Clarendon-Light';
-    src: url('Clarendon-Light.eot?#iefix') format('embedded-opentype'),
-         url('Clarendon-Light.woff') format('woff'),
-         url('Clarendon-Light.ttf')  format('truetype'),
-         url('Clarendon-Light.svg#webfont') format('svg');
+    src: url('/resources/Clarendon-Light.eot?#iefix') format('embedded-opentype'),
+         url('/resources/Clarendon-Light.woff') format('woff'),
+         url('/resources/Clarendon-Light.ttf')  format('truetype'),
+         url('/resources/Clarendon-Light.svg#webfont') format('svg');
 }
 
 body {
