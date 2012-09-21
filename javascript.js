@@ -2,6 +2,7 @@ $(document).ready(function() {
 	addfeed('github', 'https://github.com/Zack-Tillotson.atom');
 	addfeed('blog', 'http://zacherytillotson.com/blog/feed/');
 	addfeed('china', 'http://www.laowaigonewild.com/feed/');
+	//addfeedimages('blog', 'http://zacherytillotson.com/blog/wp-content/plugins/nextgen-gallery/xml/media-rss.php');
 });
 
 function addfeed($e, $url) {
