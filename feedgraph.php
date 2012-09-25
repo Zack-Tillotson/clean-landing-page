@@ -45,7 +45,7 @@ $month_counts = array();
 
 foreach($json_output->items as $item) {
 
-	$year_month = date("Y", $item->date) . " " . $SEASONS[date('n', $item->date)];
+	$year_month = date("Y", $item->date) . " " . $SEASONS[date('n', $item->date) - 1];
 	if(isset($month_counts[$year_month])) {
 		$month_counts[$year_month]++;
 	} else {
@@ -58,7 +58,7 @@ foreach($json_output->items as $item) {
 for($year = date('Y'); $year > date('Y') - 2 ; $year--) {
 	for($season = 11 ; $season >= 0 ; $season--) {
 
-		$nowwhen = date('Y') . " " . $SEASONS[date('n')];
+		$nowwhen = date('Y') . " " . $SEASONS[date('n') - 1];
 		$thenwhen = date($year) . " " . $SEASONS[$season];
 	
 		if(seasoncmp($nowwhen, $thenwhen) < 0) {
@@ -81,13 +81,14 @@ for($year = date('Y'); $year > date('Y') - 2 ; $year--) {
 // Sort
 uksort($month_counts, "seasoncmp");
 
+$container= $_GET['container'];
 ?>
 <script>
 var chart1; // globally available
 $(document).ready(function() {
       chart1 = new Highcharts.Chart({
          chart: {
-            renderTo: 'container',
+            renderTo: '<?php print $container; ?>',
             type: 'line',
 	    height: 300,
          },

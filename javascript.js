@@ -22,6 +22,7 @@ function addfeed($e, $url) {
 	});
 	
 	// Add content to feed div
-	$("#" + $d).load("displayfeed.php?feed=" + $url);
+	//$("#" + $d).load("displayfeed.php?feed=" + $url);
+	$("#" + $d).load("feedgraph.php?feed=" + $url + "&container=" + $d);
 
 }

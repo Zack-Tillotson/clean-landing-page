@@ -1,12 +1,3 @@
-/* Clarendon-Light webfont (new-bulletproof) */ 
-@font-face {
-    font-family: 'Clarendon-Light';
-    src: url('/resources/Clarendon-Light.eot?#iefix') format('embedded-opentype'),
-         url('/resources/Clarendon-Light.woff') format('woff'),
-         url('/resources/Clarendon-Light.ttf')  format('truetype'),
-         url('/resources/Clarendon-Light.svg#webfont') format('svg');
-}
-
 body {
 	background: url("/resources/back1.jpg") no-repeat grey;
 	background-size: cover;
@@ -55,7 +46,7 @@ div#links a:visited {
 }
 
 div.feed {
-	height: 400px;
+	height: 325px;
 	background: white;
 	border-top: solid black 3px;
 	position: absolute;
