@@ -1,5 +1,5 @@
-<script src="resources/jquery-1.7.2.min.js"></script>
-<script src="resources/highcharts.js"></script>
+<script src="/resources/jquery-1.7.2.min.js"></script>
+<script src="/resources/highcharts.js"></script>
 <div id="container"></div>
 <?php
 date_default_timezone_set(date_default_timezone_get());
@@ -37,7 +37,7 @@ function seasoncmp($a, $b) {
 
 // Get the feed 
 $json_url = $_GET['feed'];
-$json = file_get_contents("http://zacherytillotson.com/feedJson.php?feed=" . $json_url, 0, null, null);
+$json = file_get_contents("http://" . $_SERVER['SERVER_NAME'] . "/resources/RssToJson.php?feed=" . $json_url, 0, null, null);
 $json_output = json_decode($json);
 
 // Parse the feed
