@@ -112,7 +112,7 @@ $(document).ready(function() {
 	    min: 0,
 	    tickInterval: 1,
             title: {
-               text: 'Posts'
+               text: 'Activity'
             }
          },
          series: [{
@@ -122,8 +122,11 @@ $(document).ready(function() {
 	$first = true;
 	foreach($month_counts as $month_count) {
 ?>
-		<?php if(!$first) { print ","; } $first = false; ?><?php print $month_count; ?>
+		<?php if(!$first) { print ","; } $first = false; ?>{
+			y: <?php print $month_count; ?>
+		}
 <?php
+		
 	}
 ?>
          ]}]

@@ -1,3 +1,11 @@
+-- Font Clarendon-Light
+@font-face {
+	src: 	url('/resources/Clarendon-Light.eot?#iefix') format('embedded-opentype'),
+		url('/resources/Clarendon-Light.woff') format('woff'),
+		url('/resources/Clarendon-Light.ttf')  format('truetype'),
+		url('/resources/Clarendon-Light.svg#webfont') format('svg');
+}
+
 body {
 	background: url("/resources/back1.jpg") no-repeat grey;
 	background-size: cover;
@@ -18,9 +26,8 @@ h1 {
 }
 
 div#links {
-	background-color: white;
+	background-color: rgba(255, 255, 255, 0.6);
 	padding: 10px;
-	border-top: solid 5px;
 	text-align: center;
 	position: absolute;
 	bottom: 0px;
@@ -42,7 +49,7 @@ div#links a:hover {
 }
 
 div#links a:visited {
-	color: #444;
+	color: #000;
 }
 
 div.feed {
@@ -50,7 +57,7 @@ div.feed {
 	background: white;
 	border-top: solid black 3px;
 	position: absolute;
-	bottom: 25px;
+	bottom: 45px;
 	left: 0px;
 	right: 0px;
 	font-family: Sans-Serif;
