@@ -39,9 +39,9 @@ div#links {
 div#links a {
 	text-decoration: none;
 	font-size: 20px;
-	color: #C33;
 	padding: 5px;	
 	margin-left: 50px;
+	color: #000;
 }
 
 div#links a:hover {
@@ -49,7 +49,7 @@ div#links a:hover {
 }
 
 div#links a:visited {
-	color: #000;
+	color: #C33;
 }
 
 div.feed {
