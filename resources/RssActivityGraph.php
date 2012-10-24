@@ -60,14 +60,14 @@ for($year = date('Y'); $year > date('Y') - 2 ; $year--) {
 
 		$nowwhen = date('Y') . " " . $SEASONS[date('n') - 1];
 		$thenwhen = date($year) . " " . $SEASONS[$season];
-	
+
 		if(seasoncmp($nowwhen, $thenwhen) < 0) {
 			continue;
 		}
 		$ks = array_keys($month_counts);
 
-		if(seasoncmp($thenwhen, $ks[0]) <= 0) {
-			break;
+		if(seasoncmp($thenwhen, $ks[sizeof($ks)-1]) <= 0) {
+			break 2;
 		}
 
 		if(!isset($month_counts[$thenwhen])) {
