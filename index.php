@@ -4,6 +4,7 @@
 		<link rel="shortcut icon" href="/resources/favicon.ico" />
 		<link href="/style.css" rel="stylesheet" type="text/css">
 		<script type="text/javascript" src="/resources/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="/resources/highcharts.js"></script>
 		<script type="text/javascript" src="/javascript.js"></script>
 		<script type="text/javascript">
 			var _gaq = _gaq || [];

@@ -1,5 +1,3 @@
-<script src="/resources/jquery-1.7.2.min.js"></script>
-<script src="/resources/highcharts.js"></script>
 <div id="container"></div>
 <?php
 date_default_timezone_set(date_default_timezone_get());
