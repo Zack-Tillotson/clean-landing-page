@@ -25,6 +25,7 @@
 			<a href="/">Home</a>
 			<a href="/resources/Resume062012.pdf">R&eacute;sum&eacute;</a>
 			<a id="github" href="https://github.com/Zack-Tillotson">Github</a>
+			<a id="linkedin" href="http://www.linkedin.com/in/zacherytillotson">LinkedIn</a>
 			<a id="blog" href="/blog/">Photo Blog</a>
 			<a id="china" href="http://laowaigonewild.com/">China Blog</a>
 		</div>
