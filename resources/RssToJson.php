@@ -11,10 +11,10 @@ if (!empty($_GET['feed']))
 		$_GET['feed'] = stripslashes($_GET['feed']);
 	}
 	$feed->set_feed_url($_GET['feed']);
+	$feed->set_timeout(100000);
 	$feed->init();
 }
 $feed->handle_content_type();
-
 ?>
 {"items":[
 <?php 
@@ -38,3 +38,4 @@ $feed->handle_content_type();
 	<?php endforeach; ?>
 <?php } ?>
 ]}
+<?php $feed->__destruct(); ?>

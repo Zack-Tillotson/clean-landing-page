@@ -43,7 +43,7 @@ $month_counts = array();
 
 foreach($json_output->items as $item) {
 
-	$year_month = date("Y", $item->date) . " " . $SEASONS[date('n', $item->date) - 1];
+  $year_month = date("Y", $item->date) . " " . $SEASONS[date('n', $item->date) - 1];
 	if(isset($month_counts[$year_month])) {
 		$month_counts[$year_month]++;
 	} else {
@@ -63,7 +63,6 @@ for($year = date('Y'); $year > date('Y') - 2 ; $year--) {
 			continue;
 		}
 		$ks = array_keys($month_counts);
-
 		if(seasoncmp($thenwhen, $ks[sizeof($ks)-1]) <= 0) {
 			break 2;
 		}
